@@ -1,4 +1,4 @@
-<P>IT WORKS</P>
+<!-- Não esquecer de iniciar o servido Json-Serve -> "json-server --w vagas-db.json" -->
 
 <section class="lista-vagas">
   <div *ngFor="let vaga of vagas">
@@ -7,7 +7,7 @@
           <img src="assets\img\vagas\{{vaga.foto}}" class="card-img-top" alt="...">
           <div class="card-body">
               <h5 class="card-title">Código da Vaga: {{vaga.id}}</h5>
-              <h5 class="card-title">Vaga: {{vaga.nome}}</h5>
+              <p  class="card-title fw-bolder">Vaga: {{vaga.nome}}</p>
               <p class="card-text">Descricão da Vaga: {{vaga.descricao}}</p>
               <p class="card-text">Salário: R$ {{vaga.salario}},00</p>
           </div>
@@ -15,3 +15,4 @@
 
   </div>
 </section>
+
