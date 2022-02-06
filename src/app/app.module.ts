@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MuralVagasComponent } from './mural-vagas/mural-vagas.component';
 import { RouterModule } from '@angular/router';
 import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { TestePgComponent } from './teste-pg/teste-pg.component';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +20,16 @@ import { RodapeComponent } from './rodape/rodape.component';
     MuralVagasComponent,
     PainelVagasComponent,
     MenuComponent,
-    RodapeComponent
+    RodapeComponent,
+    TestePgComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
